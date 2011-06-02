@@ -1,0 +1,30 @@
+<?php
+
+$username = 'Guest';
+if (isset($this->user)) {
+    $username = $this->user->realName;
+}
+
+$applicationName = (isset($this->applicationName)) ? $this->applicationName : 'Government Office Rating System';
+$welcome = 'Welcome <span class="bold">' . $username . '</span>';
+
+if (isset($this->user)) {
+    $welcome .= ' - <a href="' 
+        . $this->url(array('controller' => 'auth', 'action' => 'logout'), null, true)
+        . '">logout</a>';
+} else {
+    $welcome .= ' - <a href="' 
+        . $this->url(array('controller' => 'auth', 'action' => 'login'), null, true)
+        . '">login</a>';
+}
+
+?>
+<div id="header">
+    <?php echo $welcome ?>
+    <h1> <?php echo $applicationName ?></h1>
+    <div id="search">
+    	<form>
+    		<input type="text" value="Type here" onfocus=""/>
+    	</form>
+    </div>
+</div>

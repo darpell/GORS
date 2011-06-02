@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+	<buildpathentry external="true" kind="lib" path="/home/darpell/workspace/gors/library/Symfony"/>
+	<buildpathentry external="true" kind="lib" path="/home/darpell/workspace/gors/library/Zend"/>
+	<buildpathentry external="true" kind="lib" path="/home/darpell/workspace/gors/library/Doctrine"/>
+	<buildpathentry kind="src" path=""/>
+	<buildpathentry kind="con" path="org.eclipse.dltk.USER_LIBRARY/zend+doctrine"/>
+	<buildpathentry external="true" kind="lib" path="/home/darpell/workspace/gors/library/Bisna"/>
+</buildpath>
